@@ -1,40 +1,25 @@
 import Image from "next/image";
-import { FaLocationDot } from "react-icons/fa6";
+import { GrLocationPin } from "react-icons/gr";
 
 export default function About() {
+  const skills = ["html", "css", "js", "ts", "tailwind", "react", "next"];
   return (
-    <section className="container min-h-screen px-5 md:px-10 py-20" id="about">
-      <div className="w-full mb-10 flex gap-2 md:gap-5 items-center">
-        <h1 className="text-base md:text-lg font-semibold text-center">
+    <section className="container min-h-screen px-5 py-20 md:px-10" id="about">
+      <div className="mb-10 flex w-full items-center gap-2 md:gap-5">
+        <h1 className="text-center text-base font-semibold md:text-lg">
           My Skills
         </h1>
         <span className="font-semibold">|</span>
         <ul className="flex items-center gap-2 md:gap-5">
-          <li>
-            <Image src="/html.png" width={35} height={35} alt="html" />
-          </li>
-          <li>
-            <Image src="/css.png" width={35} height={35} alt="css" />
-          </li>
-          <li>
-            <Image src="/js.png" width={35} height={35} alt="js" />
-          </li>
-          <li>
-            <Image src="/ts.png" width={45} height={45} alt="ts" />
-          </li>
-          <li>
-            <Image src="/tailwind.png" width={35} height={35} alt="tailwind" />
-          </li>
-          <li>
-            <Image src="/react.png" width={35} height={35} alt="react" />
-          </li>
-          <li>
-            <Image src="/next.png" width={35} height={35} alt="next" />
-          </li>
+          {skills.map((skill, i) => (
+            <li key={i}>
+              <Image src={`/${skill}.png`} width={35} height={35} alt={skill} />
+            </li>
+          ))}
         </ul>
       </div>
       <div className="flex flex-wrap items-center">
-        <div className="w-full mb-5 md:mb-0 flex justify-center md:w-1/2">
+        <div className="mb-5 flex w-full justify-center md:mb-0 md:w-1/2">
           <Image
             src={"/computer.png"}
             width={400}
@@ -43,11 +28,11 @@ export default function About() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <h2 className="font-extrabold text-base uppercase">About Me</h2>
-          <h1 className="font-extrabold text-xl md:text-3xl my-4">
+          <h2 className="text-base font-extrabold uppercase">About Me</h2>
+          <h1 className="my-4 text-xl font-extrabold md:text-3xl">
             Full-stack Web Developer{" "}
             <span className="block">
-              based in Makassar, Indonesia <FaLocationDot className="inline" />
+              based in Makassar, Indonesia <GrLocationPin className="inline" />
             </span>
           </h1>
           <p className="mb-3 text-sm md:text-base">
