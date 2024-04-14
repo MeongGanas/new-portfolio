@@ -36,9 +36,9 @@ export default function About() {
             </span>
           </h1>
           <p className="mb-3 text-sm md:text-base">
-            Hey, my name is Farrel, and I'm a Fullstack Developer. My passion is
-            to create and develop interface, databases and connecting interface
-            with databases for my users.
+            Hey, my name is Farrel, and I&apos;m a Fullstack Developer. My
+            passion is to create and develop interface, databases and connecting
+            interface with databases for my users.
           </p>
           <p className="text-sm md:text-base">
             My main stack currently is React/Next.js in combination with

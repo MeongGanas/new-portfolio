@@ -7,7 +7,7 @@ export default function Contact() {
     <div className="container px-5 py-20 md:px-10" id="contact">
       <h2 className="mb-5 text-xl font-extrabold uppercase">Contact Me</h2>
       <div className="flex w-full items-center justify-between">
-        <p>Here's all social media that you can use to contact me.</p>
+        <p>Here&apos;s all social media that you can use to contact me.</p>
         <ul className="flex items-center gap-5">
           <li className="transition-all duration-75 hover:-translate-y-1">
             <Link href="mailto:farreluken@gmail.com">
